@@ -1,0 +1,27 @@
+.main-photo {
+    border-width: 1.5vw;
+    width: 25vw;
+    min-width: 150px;
+}
+
+.flag-icon {
+    width: 2.5vw;
+    min-width: 50px;
+}
+
+.flag-container {
+    border-radius: 25px;
+}
+
+@media only screen and (max-width: 400px) {
+    .flag-container {
+        width: 100%;
+        padding: 20px 10px !important; 
+    }
+
+    .flag-icon {
+        width: 2px !important;
+        min-width: none !important;
+        margin: 0 2px !important;
+    }
+}

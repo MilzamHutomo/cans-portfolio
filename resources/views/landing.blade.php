@@ -15,6 +15,7 @@
         </style>
 
         <link rel="stylesheet" href="{{ asset('/src/css/app.css') }}">
+        <link rel="stylesheet" href="{{ asset('/src/css/landing.css') }}">
 
         <style>
             body {
@@ -22,7 +23,24 @@
             }
         </style>
     </head>
-    <body>
-        <h1 class="text-primary">Test</h1>
+    <body class="bg-primary">
+        <div class="container">
+            <div class="d-flex flex-column justify-content-center align-items-center" style="height: 100vh">
+                <img src="{{ asset('/storage/images/main_profile_photo.jpg') }}" alt="" srcset="" class="main-photo rounded-circle mb-3">
+                <div class="flag-container d-flex bg-white px-3 py-4 mb-3 justify-content-center">
+                    <img src="{{ asset('/storage/images/flags/id.png') }}" alt="" srcset="" class="flag-icon mx-2">
+                    <img src="{{ asset('/storage/images/flags/en.png') }}" alt="" srcset="" class="flag-icon mx-2">
+                    <img src="{{ asset('/storage/images/flags/jp.png') }}" alt="" srcset="" class="flag-icon mx-2">
+                    <img src="{{ asset('/storage/images/flags/kr.png') }}" alt="" srcset="" class="flag-icon mx-2">
+                </div>
+                <div class="w-75 text-center">
+                    <h1 class="text-secondary fw-bold">{{ __('landing.welcome_message') }}</h1>
+                    <div class="btn btn-success rounded-pill text-white text-center">
+                        <img src="{{ asset('/storage/images/whatsapp-logo.svg') }}" alt="" srcset="" class="mx-auto" width="30px">
+                        <span id="whatsapp_btn_text">{{ __('landing.whatsapp_btn_text') }}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
